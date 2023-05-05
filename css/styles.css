@@ -257,8 +257,14 @@ img {
   border-radius: 4px;
 }
 .modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  cursor: pointer;
   display: block;
-  margin-left: auto;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .backdrop.is-hidden {
   opacity: 0;
