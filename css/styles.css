@@ -383,21 +383,10 @@ img {
   background-color: var(--background-color);
   width: calc((100% - 72px) / 4);
 }
-.overlay {
-  position: absolute;
-  padding: 40px 32px;
-  top: 0;
-  left: 0;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  width: 100%;
-  height: 100%;
-  color: var(--color-section);
-  background-color: var(--color-action);
-}
 
 .overlay-label {
+  width: 100%;
+  height: 100%;
   text-align: left;
   position: absolute;
   top: 0;
@@ -406,15 +395,22 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-section);
   padding: 40px 32px;
-  background-color: #4d5ae5;
+  background-color: var(--color-action);
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-box {
   position: relative;
   overflow: hidden;
 }
-.team-box:hover.overlay,
-.team-box:focus.overlay {
+.team-box:hover .overlay,
+.team-box:focus .overlay {
   transform: translateY(0);
 }
 .team-info {
@@ -622,8 +618,8 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.link-card:hover .overlay,
-.link-card:focus .overlay {
+.link-card:hover .overlay-label,
+.link-card:focus .overlay-label {
   transform: translateY(0);
 }
 .examples-list {
