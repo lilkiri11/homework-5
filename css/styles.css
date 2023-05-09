@@ -406,8 +406,6 @@ img {
   color: var(--color-section);
   padding: 40px 32px;
   background-color: #4d5ae5;
-  height: 100%;
-  width: 100%;
 }
 
 .team-box {
